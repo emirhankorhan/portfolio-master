@@ -78,6 +78,11 @@
     
 }
 
+.navbar .navbarlink a:hover{
+    color: #f2ae00;
+    transition: 0.5s;
+}
+
 .navbar .navbarlink a{
     margin-right: 3%;
     text-decoration: none;
@@ -124,7 +129,6 @@
 .miniondiv .tagone,
 .miniondiv .tagtwo,
 .miniondiv .tagthree,
-.miniondiv .tagfour,
 .miniondiv .tagfive{
     display: flex;
     width: 100%;
@@ -149,7 +153,14 @@
     text-decoration: none;
     color: #2D2E32;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.miniondiv .tagtwo a:hover,
+.miniondiv .tagthree a:hover,
+.miniondiv .tagfive a:hover{
+    color: #f2ae00;
+    transition: 0.5s;
 }
 
 @keyframes ornek-animasyon {
