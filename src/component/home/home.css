@@ -9,11 +9,14 @@
 .imgdiv{
     width: 50%;
     height: 85vh;
-    
     display: flex;
     justify-content: flex-start;
     align-items: center;
     object-fit: cover;
+}
+
+.imgdiv img{
+    max-width: 90%;
 }
 
 .textdiv{

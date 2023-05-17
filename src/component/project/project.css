@@ -1,8 +1,6 @@
 .projectdiv {
     width: 100%;
     height: 100vh;
-    background-color: #f2ae00;
-
 }
 
 .projectbos {
@@ -22,7 +20,7 @@
 
 .projects {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: block;
 
 }
@@ -133,6 +131,10 @@
 
 
 @media only screen and (max-width: 430px) {
+    .projectdiv{
+        height: 216vh;
+        
+    }
     .projectname {
         align-items: flex-end;
         justify-content: center;
@@ -250,6 +252,10 @@
 
 
 @media only screen and (min-width: 430px) and (max-width: 830px) {
+    /* .projectdiv{
+        height: 216vh;
+
+    }
 
     .projectname {
         align-items: flex-end;
@@ -282,6 +288,122 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+    }
+
+    .project2 {
+        background-color: yellowgreen;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        margin-bottom: 8vh;
+        background-image: url(arayüz1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .project3 {
+        background-color: yellow;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        background-image: url(arayüz8.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+
+
+    }
+
+    .projects .projecttagtwo {
+        height: 192vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project4 {
+        width: 80%;
+        height: 56vh;
+        background-color: darkorange;
+        margin: 0;
+        margin-bottom: 8vh;
+        background-image: url(arayüz9.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+
+    }
+
+    .project5 {
+        background-color: yellowgreen;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        margin-bottom: 8vh;
+        background-image: url(arayüz10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    }
+
+    .project6 {
+        background-color: yellow;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        margin-bottom: 8vh;
+        background-image: url(arayüz11.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+
+    } */
+
+    .projectdiv{
+        height: 432vh;
+        
+    }
+    
+    .projectname {
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .projectname h1 {
+        margin: 0;
+    }
+
+    .projects {
+        width: 100%;
+        height: 392vh;
+    }
+
+
+    .projects .projecttagone {
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project1 {
+        width: 80%;
+        height: 56vh;
+        background-image: url(arayüz5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        margin-bottom: 8vh;
+
 
     }
 

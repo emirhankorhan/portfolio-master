@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './component/footer/Footer';
 import Home from './component/home/Home';
 import Project from './component/project/Project';
 
@@ -34,6 +35,8 @@ function App() {
       </div>
       <Home/>
       <Project/>
+      <Footer/>
+      
       
       
       
