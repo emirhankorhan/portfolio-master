@@ -6,10 +6,13 @@ function Project() {
   return (
     <div className='projectdiv'>
         <div className='projectbos'></div>
-        <div className='projectname'><h1>Project's Portfolio</h1></div>
+        <div className='projectname'><h1>Birkaç Projem</h1></div>
         <div className='projects'>
             <div className='projecttagone'>
-                <div className='project1'></div>
+                <div className='project1'>
+                    <div className='resimbir'></div>
+                    <div className='yazibir'>Flee Health App</div>
+                </div>
                 <div className='project2'></div>
                 <div className='project3'></div>
             </div>
