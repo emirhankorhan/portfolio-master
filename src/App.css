@@ -145,6 +145,10 @@
 .miniondiv .tagone i{
     margin-top: 3vh;
 }
+::selection{
+    color:white;
+    background: #f2ae00;
+   } 
 
 .miniondiv .tagtwo a,
 .miniondiv .tagthree a,

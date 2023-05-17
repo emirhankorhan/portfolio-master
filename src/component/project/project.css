@@ -3,3 +3,175 @@
     height: 100vh;
     background-color: blue;
 }
+
+.projectbos{
+    width: 100%;
+    height: 10vh;
+    background-color: aqua;
+}
+
+.projectname{
+    width: 100%;
+    height: 10vh;
+    background-color: brown;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.projects{
+    width: 100%;
+    height: 80vh;
+    display: block;
+    
+}
+
+.projects .projecttagone{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.projects .projecttagtwo{
+    width: 100%;
+    height: 40vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectname h1{
+    margin-left: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+
+}
+
+.project1{
+    width: 300px;
+    height: 200px;
+    background-color: darkorange;
+    margin-right: 3vh;
+    margin-left: 3vh;
+}
+
+.project2{
+    background-color: yellowgreen;
+    width: 300px;
+    height: 200px;
+    margin-right: 3vh;
+}
+
+.project3{
+    background-color: yellow;
+    width: 300px;
+    height: 200px;
+    margin-right: 3vh;
+   
+}
+
+.project4{
+    background-color: tomato;
+    width: 300px;
+    height: 200px;
+    margin-right: 3vh;
+    margin-left: 3vh;
+}
+
+.project5{
+    background-color: slategray;
+    width: 300px;
+    height: 200px;
+    margin-right: 3vh;
+}
+
+.project6{
+    background-color: slateblue;
+    width: 300px;
+    height: 200px;
+    margin-right: 3vh;
+    
+}
+
+
+
+@media only screen and (max-width: 830px) {
+    .projects{
+        width: 100%;
+        height: 600vh;
+    }
+    .projects .projecttagone{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project1{
+        width: 80%;
+        height: 28vh;
+        background-color: darkorange;
+        margin: 0;
+        margin-bottom: 4vh;
+      
+    }
+    
+    .project2{
+        background-color: yellowgreen;
+        width: 80%;
+        height: 28vh;
+        margin: 0;
+        margin-bottom: 4vh;
+       
+    }
+    
+    .project3{
+        background-color: yellow;
+        width: 80%;
+        height: 28vh;
+        margin: 0;
+        
+       
+    }
+
+    .projects .projecttagtwo{
+        height: 96vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project4{
+        width: 80%;
+        height: 28vh;
+        background-color: darkorange;
+        margin: 0;
+        margin-bottom: 4vh;
+      
+    }
+    
+    .project5{
+        background-color: yellowgreen;
+        width: 80%;
+        height: 28vh;
+        margin: 0;
+        margin-bottom: 4vh;
+       
+    }
+    
+    .project6{
+        background-color: yellow;
+        width: 80%;
+        height: 28vh;
+        margin: 0;
+        margin-bottom: 4vh;
+        
+       
+    }
+    
+
+}
+
