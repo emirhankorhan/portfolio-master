@@ -1,19 +1,19 @@
 .projectdiv{
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    
 }
 
 .projectbos{
     width: 100%;
     height: 10vh;
-    background-color: aqua;
+    
 }
 
 .projectname{
     width: 100%;
     height: 10vh;
-    background-color: brown;
+    
     display: flex;
     align-items: flex-end;
     
@@ -29,7 +29,6 @@
 .projects .projecttagone{
     width: 100%;
     height: 40vh;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +38,6 @@
 .projects .projecttagtwo{
     width: 100%;
     height: 40vh;
-    background-color: cadetblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +53,9 @@
 .project1{
     width: 300px;
     height: 200px;
-    background-color: darkorange;
+    background-image: url(arayüz3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     margin-right: 3vh;
     margin-left: 3vh;
 }
@@ -100,11 +100,22 @@
 
 
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 430px) {
+    .projectname{
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+
+    .projectname h1{
+        margin: 0;
+    }
     .projects{
         width: 100%;
-        height: 600vh;
+        height: 196vh;
     }
+
+    
     .projects .projecttagone{
         height: 100vh;
         display: flex;
@@ -114,9 +125,12 @@
     .project1{
         width: 80%;
         height: 28vh;
-        background-color: darkorange;
+        background-image: url(arayüz3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
         margin: 0;
         margin-bottom: 4vh;
+        
       
     }
     
@@ -172,6 +186,93 @@
        
     }
     
+
+}
+
+
+
+@media only screen and (min-width: 430px) and (max-width: 830px) {
+
+    .projectname{
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+
+    .projectname h1{
+        margin: 0;
+    }
+    .projects{
+        width: 100%;
+        height: 392vh;
+    }
+    .projects .projecttagone{
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project1{
+        width: 80%;
+        height: 56vh;
+        background-color: darkorange;
+        margin: 0;
+        margin-bottom: 8vh;
+      
+    }
+    
+    .project2{
+        background-color: yellowgreen;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        margin-bottom: 8vh;
+       
+    }
+    
+    .project3{
+        background-color: yellow;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        
+       
+    }
+
+    .projects .projecttagtwo{
+        height: 192vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project4{
+        width: 80%;
+        height: 56vh;
+        background-color: darkorange;
+        margin: 0;
+        margin-bottom: 8vh;
+      
+    }
+    
+    .project5{
+        background-color: yellowgreen;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        margin-bottom: 8vh;
+       
+    }
+    
+    .project6{
+        background-color: yellow;
+        width: 80%;
+        height: 56vh;
+        margin: 0;
+        margin-bottom: 8vh;
+        
+       
+    }
+
 
 }
 
