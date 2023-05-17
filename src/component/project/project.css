@@ -28,7 +28,7 @@
 
 .projects .projecttagone{
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
 
 .projects .projecttagtwo{
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,49 +52,31 @@
 
 .project1{
     width: 300px;
-    height: 300px;
-    
+    height: 200px;
+    background-image: url(arayüz5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
     margin-right: 3vh;
     margin-left: 3vh;
     
    
 }
 
-.project1 .resimbir{
-    width: 300px;
-    height: 250px;
-    background-image: url(arayüz3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
 
-.project1 .yazibir{
-    width: 300px;
-    height: 50px;
-    background-color: #f2ae00;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-}
 
 .project2{
     background-color: yellowgreen;
     width: 300px;
-    height: 300px;
+    height: 200px;
     margin-right: 3vh;
 }
 
 .project3{
     background-color: yellow;
     width: 300px;
-    height: 300px;
+    height: 200px;
     margin-right: 3vh;
    
 }
@@ -102,7 +84,7 @@
 .project4{
     background-color: tomato;
     width: 300px;
-    height: 300px;
+    height: 200px;
     margin-right: 3vh;
     margin-left: 3vh;
 }
@@ -110,14 +92,14 @@
 .project5{
     background-color: slategray;
     width: 300px;
-    height: 300px;
+    height: 200px;
     margin-right: 3vh;
 }
 
 .project6{
     background-color: slateblue;
     width: 300px;
-    height: 300px;
+    height: 200px;
     margin-right: 3vh;
     
 }
@@ -149,7 +131,7 @@
     .project1{
         width: 80%;
         height: 28vh;
-        background-image: url(arayüz3.png);
+        background-image: url(arayüz5.png);
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
