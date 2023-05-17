@@ -1,5 +1,6 @@
 import './App.css'
 import Home from './component/home/Home';
+import Project from './component/project/Project';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
       </div>
       <Home/>
+      <Project/>
       
       
       
