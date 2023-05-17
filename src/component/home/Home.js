@@ -9,7 +9,7 @@ function Home() {
         <h2>Merhaba, ben Emirhan Körhan</h2>
         <p>Front-End Web Geliştiricisiyim ve <br></br>Grafik Tasarım üzerinde çalışıyorum.</p>
       </div>
-      <div className='imgdiv'><img src={spill}/></div>
+      <div className='imgdiv'><img src={spill} alt='ill'/></div>
     </div>
   )
 }
