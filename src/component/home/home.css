@@ -9,13 +9,21 @@
 .imgdiv{
     width: 50%;
     height: 85vh;
-    background-color: blue;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: cover;
 }
 
 .textdiv{
     width: 50%;
     height: 85vh;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 @media only screen and (max-width: 830px) { 
@@ -31,12 +39,29 @@
     .imgdiv{
         width: 100%;
         height: 45vh;
-        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgdiv img{
+        max-width: 100%;
     }
     
     .textdiv{
         width: 100%;
         height: 40vh;
-        background-color: aqua;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .textdiv h2{
+        margin-bottom: 2vh;
+    }
+    .textdiv p{
+        font-size: 17px;
     }
 }
