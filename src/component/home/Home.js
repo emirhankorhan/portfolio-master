@@ -10,7 +10,7 @@ function Home() {
       <div className='textdiv'>
         <h2>Merhaba, ben Emirhan Körhan</h2>
         <p>Front-End Web Geliştiricisiyim ve Grafik Tasarım üzerinde çalışıyorum.</p>
-        <a href='homeill.jpg' download="homeill.jpg">CV İNDİR</a>
+        <a href='emirkrhan.pdf' download="emirkrhan.pdf">CV İNDİR</a>
       </div>
       <div className='imgdiv'><img src={spill} alt='ill'/></div>
     </div>
