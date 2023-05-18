@@ -7,6 +7,7 @@
 .anadivana{
     width: 100%;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 /* .emirhan .pointer{
     position: absolute;
@@ -90,6 +91,19 @@
     width: 21%;
 }
 
+.navbar .navbarlink .atagx{
+    margin-right: 3%;
+    text-decoration: none;
+    color: #2D2E32;
+    width: 21%;
+    cursor: pointer;
+}
+
+.navbar .navbarlink .atagx:hover{
+    color: #f2ae00;
+    transition: 0.5s;
+}
+
 .fa-bars{
     display: none;
 }
@@ -158,6 +172,7 @@
     color: #2D2E32;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .miniondiv .tagtwo a:hover,

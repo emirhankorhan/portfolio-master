@@ -4,6 +4,8 @@ import Home from './component/home/Home';
 import React, { useState } from 'react'
 import Project from './component/project/Project';
 import Footer from './component/footer/Footer';
+import { Link} from 'react-scroll'
+
 
 
 function App() {
@@ -25,26 +27,48 @@ function App() {
         <div className='navbarlogo'>Emir.krhan</div>
         <div className='navbarlink'>
           <a href='/' >Ana Sayfa</a>
-          <a href='/about'>Hakkımda</a>
-          <a href='/contact'>İletişim</a>
+          <Link className='atagx' to="about" spy={true} smooth={true} duration={500}>
+          Hakkımda
+        </Link>
+        <Link className='atagx' to="contact" spy={true} smooth={true} duration={500}>
+          İletişim
+        </Link>
         </div>
         <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
       </div>
+      <a href='/' id='about'>{null}</a>
       <Home/>
       <Project/>
+      <a href='/' id='contact'>{null}</a>
       <Footer/>
       </div>
     )}else if(onButton === true){
       return(
+        <div>
         <div className='miniondiv'>
           <div className='tagone'>
        
           <i onClick={buttonaBasma} class="fa-solid fa-xmark"></i>
           </div>
           <div className='tagtwo'><a href='/' >Ana Sayfa</a></div>
-          <div className='tagthree'><a href='/about'>Hakkımda</a></div>
-          <div className='tagfive'><a href='/contact'>İletişim</a></div>
+          <div className='tagthree'>
+          <Link className='atagx' to="about" spy={true} smooth={true} duration={500}>
+          Hakkımda
+        </Link>
+          </div>
+          <div className='tagfive'>
+          <Link className='atagx' to="contact" spy={true} smooth={true} duration={500}>
+          İletişim
+        </Link>
+          </div>
           
+          
+        </div>
+        <a href='/' id='about'>{null}</a>
+      <Home/>
+      <Project/>
+      <a href='/' id='contact'>{null}</a>
+      <Footer/>
         </div>
       )
     }

@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./foooter.css"
 import emailjs from 'emailjs-com';
 
 function Footer() {
 
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [message, setMessage] = useState("");
+  const [buttonName, setButtonName] = useState("Gönder");
+
+  const handleName = (value) =>{
+    setName(value);
+}
+
+const handleMail = (value) =>{
+  setMail(value);
+}
+
+const handleMessage = (value) =>{
+  setMessage(value);
+}
+
+
   function sendEmail(e) {
     e.preventDefault();
+    setMail("");
+    setName("");
+    setMessage("");
+    setButtonName("Mesajınız alındı.");
+         setTimeout(() => {
+           setButtonName("Gönder");
+         }, 3000);
 
     emailjs.sendForm('service_i7ftiip', 'template_iww8mm5', e.target, 'pRivggAPeJPf9i9Oe')
       .then((result) => {
@@ -22,10 +47,10 @@ function Footer() {
       <form className="contact-form" onSubmit={sendEmail}>
         <div className='maildiv'>
 
-          <input className='namemail' placeholder='İsim' type="text" name="user_name" />
-          <input className='mailmail' placeholder='E-Mail' type="email" name="user_email" />
-          <textarea maxLength={400} className='messagemail' placeholder='Mesaj' type='text' name="message" />
-          <input className='buttonmail' type="submit" value="Gönder" />
+          <input value={name} onChange={(i) => handleName(i.target.value)} autocomplete="off" className='namemail' placeholder='İsim' type="text" name="user_name" />
+          <input value={mail} onChange={(i) => handleMail(i.target.value)} autocomplete="off" className='mailmail' placeholder='E-Mail' type="email" name="user_email" />
+          <textarea value={message} onChange={(i) => handleMessage(i.target.value)} autocomplete="off" maxLength={400} className='messagemail' placeholder='Mesaj' type='text' name="message" />
+          <input className='buttonmail' type="submit" value={buttonName} />
         </div>
       </form>
       <div className='footercontact'>
