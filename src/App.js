@@ -1,7 +1,9 @@
 import './App.css'
-import Footer from './component/footer/Footer';
+
 import Home from './component/home/Home';
-import Project from './component/project/Project';
+import Mail from './component/mail/Mail';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
@@ -33,9 +35,16 @@ function App() {
         </div>
         <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
       </div>
-      <Home/>
-      <Project/>
-      <Footer/>
+      
+      
+      <BrowserRouter>
+      <Routes>
+      <Route exact path="/" element={<Home/>}></Route>
+        <Route exact path="/contact" element={<Mail/>}></Route>
+      </Routes>
+      </BrowserRouter>
+      
+      
       
       
       

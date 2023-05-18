@@ -1,11 +1,14 @@
 import React from 'react'
 import "./home.css"
 import spill from "./spill.svg"
+import Project from '../project/Project'
+import Footer from '../footer/Footer'
 
 
 function Home() {
   
   return (
+    <div>
     <div className='fullScreen'>
       <div className='textdiv'>
         <h2>Merhaba, ben Emirhan Körhan</h2>
@@ -13,6 +16,9 @@ function Home() {
         <a href='emirkrhan.pdf' download="emirkrhan.pdf">CV İNDİR</a>
       </div>
       <div className='imgdiv'><img src={spill} alt='ill'/></div>
+    </div>
+    <Project/>
+    <Footer/>
     </div>
   )
 }
