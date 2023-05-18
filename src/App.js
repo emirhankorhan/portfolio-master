@@ -1,14 +1,9 @@
 import './App.css'
-
 import Home from './component/home/Home';
-import Mail from './component/mail/Mail';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-
-
 
 import React, { useState } from 'react'
+import Project from './component/project/Project';
+import Footer from './component/footer/Footer';
 
 
 function App() {
@@ -35,21 +30,9 @@ function App() {
         </div>
         <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
       </div>
-      
-      
-      <BrowserRouter>
-      <Routes>
-      <Route exact path="/" element={<Home/>}></Route>
-        <Route exact path="/contact" element={<Mail/>}></Route>
-      </Routes>
-      </BrowserRouter>
-      
-      
-      
-      
-      
-      
-      
+      <Home/>
+      <Project/>
+      <Footer/>
       </div>
     )}else if(onButton === true){
       return(

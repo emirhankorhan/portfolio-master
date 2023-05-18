@@ -1,11 +1,11 @@
 .projectdiv {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 .projectbos {
     width: 100%;
-    height: 10vh;
+    height: 0vh;
 
 }
 
@@ -253,6 +253,12 @@
         align-items: flex-end;
         justify-content: center;
 
+    }
+
+    .projectbos {
+        width: 100%;
+        height: 20vh;
+    
     }
 
     .projectname h1 {
