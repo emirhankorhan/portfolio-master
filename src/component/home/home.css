@@ -13,10 +13,12 @@
     justify-content: flex-start;
     align-items: center;
     object-fit: cover;
+    user-select: none;
 }
 
 .imgdiv img {
     max-width: 90%;
+    user-select: none;
 }
 
 .textdiv {
@@ -89,6 +91,7 @@
 
     .imgdiv img {
         max-width: 100%;
+        user-select: none;
     }
 
     .textdiv {
@@ -134,5 +137,6 @@
 @media only screen and (min-width: 330px) and (max-width: 830px) {
     .imgdiv {
         height: 50vh;
+        user-select: none;
     }
 }
