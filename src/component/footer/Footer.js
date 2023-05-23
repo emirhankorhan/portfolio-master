@@ -8,6 +8,9 @@ function Footer() {
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonName, setButtonName] = useState("Gönder");
+  const [warningOne, setWarningOne] = useState(false);
+  const [warningTwo, setWarningTwo] = useState(false);
+  const [warningThree, setWarningThree] = useState(false);
 
   const handleName = (value) =>{
     setName(value);
@@ -22,8 +25,39 @@ const handleMessage = (value) =>{
 }
 
 
+if (mail.length<0) {
+  return null;
+  
+}else{
+  
+}
+
+
   function sendEmail(e) {
-    e.preventDefault();
+    if (mail.length<=0) {
+      e.preventDefault();
+      setWarningOne(true);
+         setTimeout(() => {
+           setWarningOne(false);
+         }, 2000);
+      
+    }else if(message.length<=0){
+      e.preventDefault();
+      setWarningTwo(true);
+         setTimeout(() => {
+           setWarningTwo(false);
+         }, 2000);
+      
+
+    }else if(name.length<=0){
+      e.preventDefault();
+      setWarningThree(true);
+         setTimeout(() => {
+           setWarningThree(false);
+         }, 2000);
+
+    }else{
+      e.preventDefault();
     setMail("");
     setName("");
     setMessage("");
@@ -38,11 +72,24 @@ const handleMessage = (value) =>{
       }, (error) => {
           console.log(error.text);
       });
+    }
+    
   }
 
 
   return (
     <div className='footer'>
+      <div className="warn">
+            {warningOne ? <div className="warning-one">
+              <div>E-Mail alanı boş bırakılamaz!</div>
+            </div> : ""}
+            {warningTwo ? <div className="warning-one">
+              <div>Mesaj kısmı boş bırakılamaz!</div>
+            </div> : ""}
+            {warningThree ? <div className="warning-one">
+              <div>İsim kısmı boş bırakılamaz!</div>
+            </div> : ""}
+          </div>
       <div className='footertext'>İletişime geçmek için;</div>
       <form className="contact-form" onSubmit={sendEmail}>
         <div className='maildiv'>
@@ -55,7 +102,7 @@ const handleMessage = (value) =>{
       </form>
       <div className='footercontact'>
         <div className='footericon'>
-        <a href='https://www.instagram.com/emir.krhan/?igshid=ZDdkNTZiNTM%3D'><i class="fa-brands fa-instagram"></i></a>
+        <a href='https://instagram.com/emir.krhan?igshid=ZDc4ODBmNjlmNQ=='><i class="fa-brands fa-instagram"></i></a>
         <a href='https://www.behance.net/emirhankrhan'><i class="fa-brands fa-behance"></i></a>
         <a href='https://www.deviantart.com/sadecemeftun'><i class="fa-brands fa-deviantart"></i></a>
         <a href='https://www.wattpad.com/user/sadecemeftun'><i class="fa-solid fa-w"></i></a>

@@ -228,3 +228,10 @@
         transition: 0.5s;
     }
 }
+
+.warn .warning-one{
+    position: absolute;
+    height: 10vh;
+    width: 70%;
+    background-color: #f2ae00;
+}
