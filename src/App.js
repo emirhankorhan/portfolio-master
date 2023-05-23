@@ -45,6 +45,19 @@ function App() {
     )}else if(onButton === true){
       return(
         <div>
+          <div className='navbar'>
+        <div className='navbarlogo'>Emir.krhan</div>
+        <div className='navbarlink'>
+          <a href='/' >Ana Sayfa</a>
+          <Link className='atagx' to="about" spy={true} smooth={true} duration={500}>
+          Hakkımda
+        </Link>
+        <Link className='atagx' to="contact" spy={true} smooth={true} duration={500}>
+          İletişim
+        </Link>
+        </div>
+        <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
+      </div>
         <div className='miniondiv'>
           <div className='tagone'>
        
