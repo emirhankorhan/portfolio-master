@@ -54,12 +54,12 @@ function App() {
             <button className='opacitybutton' onClick={buttonaBasma}>Ana Sayfa</button>
               </a></div>
           <div className='tagthree'>
-          <Link className='atagx' to="about" spy={true} smooth={true} duration={500}>
+          <Link className='atagx' to="about" spy={true} smooth={true} duration={1000}>
           <button className='opacitybutton' onClick={buttonaBasma}>Hakkımda</button>
         </Link>
           </div>
           <div className='tagfive'>
-          <Link className='atagx' to="contact" spy={true} smooth={true} duration={500}>
+          <Link className='atagx' to="contact" spy={true} smooth={true} duration={1000}>
           <button className='opacitybutton' onClick={buttonaBasma}>İletişim</button>
         </Link>
           </div>
