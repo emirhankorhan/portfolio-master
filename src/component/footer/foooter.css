@@ -242,33 +242,24 @@
         transition: 0.5s;
     }
 
-    .warn .warning-one{
-        position: fixed;
-        top: 15vh;
-        height: 5vh;
-        width: 55%;
-        background-color: #f2ae00;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 10px;
-        font-size: 0.4rem;
-    }
+ 
+
 }
 
 .warn .warning-one{
     position: fixed;
-    top: 15vh;
+    top: 10vh;
     height: 5vh;
-    width: 55%;
+    width: 60%;
     background-color: #f2ae00;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 10px;
+    animation-name: animasyonx;
+    animation-duration: 1s;
 }
 
 .warn{
@@ -276,3 +267,8 @@
     align-items: center;
     justify-content: center;
 }
+
+@keyframes animasyonx {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
