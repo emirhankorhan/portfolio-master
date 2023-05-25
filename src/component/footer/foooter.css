@@ -60,6 +60,18 @@
 }
 
 @media only screen and (min-width: 630px) {
+    .buttonmail{
+        width: 60%;
+        height: 5vh;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
     .footercontact {
         width: 100%;
         height: 15vh;
@@ -78,23 +90,6 @@
         font-size: 20px;
     }
 
-    .warn .warning-one{
-        position: fixed;
-        top: 15vh;
-        height: 5vh;
-        width: 55%;
-        background-color: #f2ae00;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
-        border-radius: 10px;
-        font-size: 0.4rem;
-    }
-
-   
-    
-   
    
 }
 
@@ -173,6 +168,7 @@
 
 
 @media only screen and (max-width: 430px) {
+
     .maildiv{
         width: 100%;
         height: 50vh;
@@ -225,7 +221,7 @@
     }
     
     .buttonmail{
-        width: 40%;
+        width: 60%;
         height: 5vh;
         border-radius: 20px;
         outline: none;
@@ -242,33 +238,21 @@
         transition: 0.5s;
     }
 
+    input:focus {outline:none !important}
+
  
 
 }
 
-.warn .warning-one{
-    position: fixed;
-    top: 10vh;
-    height: 5vh;
-    width: 60%;
-    background-color: #f2ae00;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    font-size: 10px;
-    animation-name: animasyonx;
-    animation-duration: 1s;
-}
 
-.warn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
+
+
 
 @keyframes animasyonx {
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+  input:focus {outline:none !important}

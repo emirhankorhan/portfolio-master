@@ -8,9 +8,6 @@ function Footer() {
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonName, setButtonName] = useState("Gönder");
-  const [warningOne, setWarningOne] = useState(false);
-  const [warningTwo, setWarningTwo] = useState(false);
-  const [warningThree, setWarningThree] = useState(false);
 
   const handleName = (value) =>{
     setName(value);
@@ -36,24 +33,24 @@ if (mail.length<0) {
   function sendEmail(e) {
     if (mail.length<=0) {
       e.preventDefault();
-      setWarningOne(true);
+      setButtonName("Boş alan bırakmayınız!");
          setTimeout(() => {
-           setWarningOne(false);
+           setButtonName("Gönder");
          }, 2000);
       
     }else if(message.length<=0){
       e.preventDefault();
-      setWarningTwo(true);
+      setButtonName("Boş alan bırakmayınız!");
          setTimeout(() => {
-           setWarningTwo(false);
+           setButtonName("Gönder");
          }, 2000);
       
 
     }else if(name.length<=0){
       e.preventDefault();
-      setWarningThree(true);
+      setButtonName("Boş alan bırakmayınız!");
          setTimeout(() => {
-           setWarningThree(false);
+           setButtonName("Gönder");
          }, 2000);
 
     }else{
@@ -79,17 +76,6 @@ if (mail.length<0) {
 
   return (
     <div className='footer'>
-      <div className="warn">
-            {warningOne ? <div className="warning-one">
-              <div>E-Mail alanı boş bırakılamaz!</div>
-            </div> : ""}
-            {warningTwo ? <div className="warning-one">
-              <div>Mesaj kısmı boş bırakılamaz!</div>
-            </div> : ""}
-            {warningThree ? <div className="warning-one">
-              <div>İsim kısmı boş bırakılamaz!</div>
-            </div> : ""}
-          </div>
       <div className='footertext'>İletişime geçmek için;</div>
       <form className="contact-form" onSubmit={sendEmail}>
         <div className='maildiv'>
@@ -108,7 +94,7 @@ if (mail.length<0) {
         <a href='https://www.wattpad.com/user/sadecemeftun'><i class="fa-solid fa-w"></i></a>
       </div>
       </div>
-      <div className='footerbilgi'>© 2023, All Rights Reserved</div>
+      <div className='footerbilgi'>Copyright © 2023, All Rights Reserved</div>
     </div>
   )
 }
