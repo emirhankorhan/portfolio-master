@@ -68,7 +68,7 @@ function App() {
               </a></div>
           <div className='tagthree'>
           <Link className='atagx' to="about" spy={true} smooth={true} duration={1000}>
-          <button className='opacitybutton' onClick={buttonaBasma}>Hakkımda</button>
+          <button className='opacitybutton' onClick={buttonaBasma}><a href='/about'>Hakkımda</a></button>
         </Link>
           </div>
           <div className='tagfive'>
