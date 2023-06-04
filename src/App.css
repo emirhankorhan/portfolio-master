@@ -97,12 +97,12 @@
     transition: 0.5s;
 }
 
-.fa-bars{
+.fa-microsoft{
     display: none;
 }
 
 @media only screen and (max-width: 830px) {
-    .fa-bars{
+    .fa-microsoft{
         display: flex;
         align-items: center;
         justify-content: center;

@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Project from './component/project/Project';
 import Footer from './component/footer/Footer';
 import { Link } from 'react-scroll'
+import About from './component/about/About';
 
 
 
@@ -34,10 +35,11 @@ function App() {
           İletişim
         </Link>
         </div>
-        <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
+        <i onClick={buttonaBas} class="fa-brands fa-microsoft"></i>
       </div>
       <a href='/' id='about'>{null}</a>
       <Home/>
+      <About/>
       <Project/>
       <a href='/' id='contact'>{null}</a>
       <Footer/>
@@ -56,7 +58,7 @@ function App() {
           İletişim
         </Link>
         </div>
-        <i onClick={buttonaBas} class="fa-solid fa-bars"></i>
+        <i onClick={buttonaBas} class="fa-brands fa-microsoft"></i>
       </div>
         <div className='miniondiv'>
           <div className='tagone'>
@@ -81,6 +83,7 @@ function App() {
         </div>
         <a href='/' id='about'>{null}</a>
       <Home/>
+      <About/>
       <Project/>
       <a href='/' id='contact'>{null}</a>
       <Footer/>
