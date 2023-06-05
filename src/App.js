@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import Project from './component/project/Project';
 import Footer from './component/footer/Footer';
 import { Link } from 'react-scroll'
-import About from './component/about/About';
+// import About from './component/about/About';
 
 
 
