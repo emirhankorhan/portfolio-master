@@ -39,7 +39,7 @@ function App() {
       </div>
       <a href='/' id='about'>{null}</a>
       <Home/>
-      <About/>
+      {/* <About/> */}
       <Project/>
       <a href='/' id='contact'>{null}</a>
       <Footer/>
@@ -83,7 +83,7 @@ function App() {
         </div>
         <a href='/' id='about'>{null}</a>
       <Home/>
-      <About/>
+      {/* <About/> */}
       <Project/>
       <a href='/' id='contact'>{null}</a>
       <Footer/>
