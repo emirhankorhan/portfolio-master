@@ -9,18 +9,18 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #636fbd;
+    align-items: flex-end;
+    justify-content:center;
+    background-color: #ffc12c;
 }
 
 .gif-app{
-    width: 40rem;
-    height: 30rem;
-    background-image: url(invite.gif);
+    width: 30rem;
+    height: 20rem;
+    background-image: url(petz.gif);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 /* 
 .opacitybutton{
