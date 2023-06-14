@@ -4,6 +4,25 @@
     padding: 0;
 }
 
+.app{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #636fbd;
+}
+
+.gif-app{
+    width: 40rem;
+    height: 30rem;
+    background-image: url(invite.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* 
 .opacitybutton{
     background-color: #fff;
     border: none;
@@ -175,7 +194,7 @@
 @keyframes ornek-animasyon {
     from {left: -100%;}
     to {left: 0;}
-  }
+  } */
 
 
 
